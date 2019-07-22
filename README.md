@@ -58,4 +58,4 @@ You don't need to install anything or run anything, just open the index.html fil
 - type ​ **giorgio​** in the form, a message saying the player is not available is displayed
 - type ​ **francesco**​ in the form, a message saying the player is not available is displayed
 
-![Demo](/demo.demo.gif "App Demo")
+![Demo](/frontend/demo/demo.gif "App Demo")

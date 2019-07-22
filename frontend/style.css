@@ -1,0 +1,298 @@
+/*by mostafa shawki */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/* #efefef */
+:root {
+  --text-color: #4a4a4a;
+  /* --theme-color: #02d0f9; */
+  --theme-color: #a11f21;
+  --background-color-body: #fff;
+  --background-color: #f8f9fd;
+  --danger-color: #ff9700;
+  --success-color: #23d160;
+  --showcase: url("./img/showcase1.jpg") no-repeat center center fixed;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  /* font-size: 40px;       */
+  width: 100%; /* take full browser width */
+  height: 100%; /* take full browser height*/
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  color: var(--text-color);
+  font-size: 1rem;
+  background-color: var(--background-color-body);
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+h6 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+a {
+  color: var(--theme-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-color);
+}
+p {
+  padding-bottom: 3px;
+}
+
+.box {
+  width: 90%;
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 5px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  min-height: 100px;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.search-box {
+  width: 220px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  background-image: url("./img/search.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.search-box:focus {
+  width: 100%;
+}
+
+/* select */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: var(--background-color-body);
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: var(--background-color-body);
+  outline: none;
+  font-size: 0.9rem;
+}
+
+input:focus {
+  border: 1px solid var(--theme-color);
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: var(--theme-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  /* box-shadow: 0 0 20px grey; */
+}
+
+input[type="submit"]:disabled {
+  width: 100%;
+  background-color: #353a40;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button {
+  /* width: 120px; */
+  background-color: var(--theme-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  /* to fit any text size */
+  display: inline-block;
+}
+
+.button {
+  background-color: var(--theme-color);
+  width: 100%;
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.button-small {
+  background-color: var(--theme-color);
+  width: 25%;
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.button-danger {
+  width: 100%;
+  background-color: var(--danger-color);
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.button-danger:hover {
+  color: var(--theme-color);
+}
+
+.button-theme {
+  color: var(--theme-color);
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  right: 5px;
+  top: 15px;
+}
+
+.button-trans {
+  color: var(--theme-color);
+  border: none;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.alert-danger {
+  background-color: #f7d7da;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+#landing {
+  background: var(--showcase);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.inner {
+  padding-top: 30px;
+  max-width: 786px;
+  text-align: center;
+  color: #fff;
+}
+.cover {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex: 0 0 100%;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+
+  .box {
+    width: 95%;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+  }
+}

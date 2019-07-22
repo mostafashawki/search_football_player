@@ -1,4 +1,4 @@
-# football_app
+# Search Football Player App
 
 Web app to check players status and profiles using vanilla javascript in the frontend and Nodejs Microservices in the backend with Monogdb
 

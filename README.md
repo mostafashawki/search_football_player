@@ -50,7 +50,7 @@ npm test
 
 ## Frontend
 
-You don't need to install anything or run anything, just open the index.html file, you can:
+You don't need to install anything or run anything (just vanilla javascript), just open the index.html file.
 
 #### Acceptance criteria:
 
